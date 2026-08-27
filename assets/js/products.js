@@ -7,7 +7,7 @@ function displayProducts(list) {
     productList.innerHTML += `
 
           <div
-              class="product-card bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+              class="product-card bg-gray-800 rounded-xl overflow-hidden border border-gray-700 shadow-lg shadow-black/40">
 
               <img
                   src="${product.image}"
