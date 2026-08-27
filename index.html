@@ -6,39 +6,18 @@
 
     <title>ESPADA</title>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-
-      .product-card {
-        transition: 0.3s;
-      }
-
-      .product-card:hover {
-        transform: translateY(-6px);
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
-  <body  class=" text-white">
-
-
-    <!-- ================= NAVBAR ================= -->
-
+  <body class="text-white">
     <header class="bg-black ray-900 border-b border-gray-800 sticky top-0 z-50">
       <nav class="max-w-7xl mx-auto px-5 py-4">
         <div class="flex justify-between items-center">
-          <!-- Logo -->
-
           <a href="#home" class="text-2xl font-bold text-purple-400">
             ESPA<span class="text-white">DA</span>
           </a>
-
-          <!-- Desktop Menu -->
 
           <div class="hidden md:flex gap-8">
             <a href="#home" class="hover:text-purple-400"> Home </a>
@@ -49,8 +28,6 @@
 
             <a href="#contact" class="hover:text-purple-400"> Contact </a>
           </div>
-
-          <!-- Cart -->
 
           <button
             onclick="openCart()"
@@ -66,14 +43,10 @@
             </span>
           </button>
 
-          <!-- Mobile Button -->
-
           <button onclick="toggleMenu()" class="md:hidden ml-3 text-2xl">
             ☰
           </button>
         </div>
-
-        <!-- Mobile Menu -->
 
         <div id="mobileMenu" class="hidden md:hidden mt-5 space-y-4">
           <a href="#home" class="block hover:text-purple-400"> Home </a>
@@ -87,17 +60,10 @@
       </nav>
     </header>
 
-    <!-- ================= HERO ================= -->
-
-    <section
-      id="home"
-      class="min-h-[80vh] flex items-center bg-black"
-    >
+    <section id="home" class="min-h-[80vh] flex items-center bg-black">
       <div
         class="max-w-7xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-10 items-center"
       >
-        <!-- Text -->
-
         <div>
           <p class="text-purple-400 font-semibold mb-4">PREMIUM DESK MATS</p>
 
@@ -106,11 +72,7 @@
             <span class="text-purple-400"> Desk Setup </span>
           </h1>
 
-          <p class="text-gray-400 mt-6 text-lg">
-          FEEL YOUR SPACE WITH US
-
-
-          </p>
+          <p class="text-gray-400 mt-6 text-lg">FEEL YOUR SPACE WITH US</p>
 
           <div class="flex flex-wrap gap-4 mt-8">
             <a
@@ -126,14 +88,12 @@
             >
               VIEW COLLECTIONS
             </a>
-          
+          </div>
         </div>
-          <!--image animation-->
-          <img src="" alt="">
+
+        <img src="" alt="" />
       </div>
     </section>
-
-    <!-- ================= FEATURES ================= -->
 
     <section class="py-16">
       <div class="max-w-7xl mx-auto px-5">
@@ -173,8 +133,6 @@
       </div>
     </section>
 
-    <!-- ================= PRODUCTS ================= -->
-
     <section id="products" class="py-20 bg-gray-900/50">
       <div class="max-w-7xl mx-auto px-5">
         <div class="text-center mb-10">
@@ -182,8 +140,6 @@
 
           <h2 class="text-3xl sm:text-4xl font-bold mt-2">Popular Desk Mats</h2>
         </div>
-
-        <!-- Search -->
 
         <div class="max-w-md mx-auto mb-10">
           <input
@@ -195,8 +151,6 @@
           />
         </div>
 
-        <!-- Products -->
-
         <div
           id="productList"
           class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -204,35 +158,31 @@
       </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
+    <section id="about" class="py-24 bg-black overflow-hidden">
+      <div class="max-w-5xl mx-auto px-5 text-center">
+        <p
+          class="m-0 text-purple-400 text-sm md:text-base font-semibold tracking-[0.4em] uppercase"
+        >
+          Why
+        </p>
 
- <section id="about" class="py-24 bg-black overflow-hidden">
-  <div class="max-w-5xl mx-auto px-5 text-center">
+        <h2
+          class="m-0 mt-3 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight leading-none"
+        >
+          <span class="text-white">ESPADA</span>
+        </h2>
 
-    <!-- Small heading -->
-    <p class="m-0 text-purple-400 text-sm md:text-base font-semibold tracking-[0.4em] uppercase">
-      Why
-    </p>
+        <div class="w-20 h-1 bg-purple-500 mx-auto mt-8 rounded-full"></div>
 
-    <!-- Main heading -->
-    <h2 class="m-0 mt-3 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight leading-none">
-      <span class="text-white">ESPADA</span>
-    </h2>
-
-    <!-- Line -->
-    <div class="w-20 h-1 bg-purple-500 mx-auto mt-8 rounded-full"></div>
-
-    <!-- Description -->
-    <p class="max-w-2xl mx-auto mt-8 text-gray-400 text-base md:text-lg leading-8">
-      Designed for gamers, creators and professionals.
-      ESPADA brings comfort, style and performance together
-      to create the perfect desk setup.
-    </p>
-
-  </div>
-</section>
-
-    <!-- ================= CONTACT ================= -->
+        <p
+          class="max-w-2xl mx-auto mt-8 text-gray-400 text-base md:text-lg leading-8"
+        >
+          Designed for gamers, creators and professionals. ESPADA brings
+          comfort, style and performance together to create the perfect desk
+          setup.
+        </p>
+      </div>
+    </section>
 
     <section id="contact" class="py-20 bg-gray-900">
       <div class="max-w-xl mx-auto px-5">
@@ -262,8 +212,7 @@
             placeholder="Your Message"
             required
             class="w-full bg-gray-950 border border-gray-700 rounded-lg px-5 py-3 outline-none focus:border-purple-500"
-          >
-          </textarea>
+          ></textarea>
 
           <button
             type="submit"
@@ -274,8 +223,6 @@
         </form>
       </div>
     </section>
-
-    <!-- ================= FOOTER ================= -->
 
     <footer class="border-t border-gray-800 py-8">
       <div
@@ -302,8 +249,6 @@
         © 2026 DeskMat. All Rights Reserved.
       </p>
     </footer>
-
-    <!-- ================= CART MODAL ================= -->
 
     <div
       id="cartModal"
@@ -341,293 +286,9 @@
       </div>
     </div>
 
-    <!-- ================= JAVASCRIPT ================= -->
-
-    <script>
-      // Product data
-
-      const products = [
-        {
-          id: 1,
-          name: "RGB Gaming Mat",
-          price: 1499,
-          category: "Gaming",
-          image:
-            "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=800&q=80",
-        },
-
-        {
-          id: 2,
-          name: "Black Minimal Mat",
-          price: 799,
-          category: "Office",
-          image:
-            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
-        },
-
-        {
-          id: 3,
-          name: "Anime Desk Mat",
-          price: 999,
-          category: "Anime",
-          image:
-            "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80",
-        },
-
-        {
-          id: 4,
-          name: "Cyber Gaming Mat",
-          price: 1299,
-          category: "Gaming",
-          image:
-            "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80",
-        },
-
-        {
-          id: 5,
-          name: "Leather Office Mat",
-          price: 1099,
-          category: "Office",
-          image:
-            "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80",
-        },
-
-        {
-          id: 6,
-          name: "Custom Desk Mat",
-          price: 1599,
-          category: "Custom",
-          image:
-            "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80",
-        },
-      ];
-
-      // Cart
-
-      let cart = [];
-
-      // Display products
-
-      function displayProducts(list) {
-        const productList = document.getElementById("productList");
-
-        productList.innerHTML = "";
-
-        list.forEach((product) => {
-          productList.innerHTML += `
-
-                <div
-                    class="product-card bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
-
-                    <img
-                        src="${product.image}"
-                        alt="${product.name}"
-                        class="w-full h-60 object-cover">
-
-                    <div class="p-5">
-
-                        <p class="text-purple-400 text-sm">
-                            ${product.category}
-                        </p>
-
-                        <h3
-                            class="text-xl font-bold mt-2">
-
-                            ${product.name}
-
-                        </h3>
-
-                        <p
-                            class="text-2xl font-bold mt-3">
-
-                            ₹${product.price}
-
-                        </p>
-
-                        <button
-                            onclick="addToCart(${product.id})"
-                            class="w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-lg mt-5 font-semibold">
-
-                            Add To Cart
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            `;
-        });
-      }
-
-      // Add product to cart
-
-      function addToCart(id) {
-        const product = products.find((item) => item.id === id);
-
-        const existing = cart.find((item) => item.id === id);
-
-        if (existing) {
-          existing.quantity++;
-        } else {
-          cart.push({
-            ...product,
-            quantity: 1,
-          });
-        }
-
-        updateCart();
-
-        alert(product.name + " added to cart!");
-      }
-
-      // Update cart
-
-      function updateCart() {
-        const cartCount = document.getElementById("cartCount");
-
-        const cartItems = document.getElementById("cartItems");
-
-        const cartTotal = document.getElementById("cartTotal");
-
-        let count = 0;
-        let total = 0;
-
-        cartItems.innerHTML = "";
-
-        cart.forEach((item) => {
-          count += item.quantity;
-
-          total += item.price * item.quantity;
-
-          cartItems.innerHTML += `
-
-                <div
-                    class="flex gap-4 bg-gray-950 p-4 rounded-lg">
-
-                    <img
-                        src="${item.image}"
-                        class="w-20 h-20 object-cover rounded-lg">
-
-                    <div class="flex-1">
-
-                        <h3 class="font-bold">
-                            ${item.name}
-                        </h3>
-
-                        <p class="text-purple-400 mt-1">
-                            ₹${item.price}
-                        </p>
-
-                        <div class="flex items-center gap-3 mt-2">
-
-                            <button
-                                onclick="changeQuantity(${item.id}, -1)"
-                                class="bg-gray-800 px-3 py-1 rounded">
-
-                                -
-
-                            </button>
-
-                            <span>
-                                ${item.quantity}
-                            </span>
-
-                            <button
-                                onclick="changeQuantity(${item.id}, 1)"
-                                class="bg-gray-800 px-3 py-1 rounded">
-
-                                +
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            `;
-        });
-
-        cartCount.textContent = count;
-
-        cartTotal.textContent = "₹" + total.toLocaleString();
-      }
-
-      // Change quantity
-
-      function changeQuantity(id, amount) {
-        const item = cart.find((product) => product.id === id);
-
-        if (!item) return;
-
-        item.quantity += amount;
-
-        if (item.quantity <= 0) {
-          cart = cart.filter((product) => product.id !== id);
-        }
-
-        updateCart();
-      }
-
-      // Search
-
-      function searchProducts() {
-        const search = document.getElementById("search").value.toLowerCase();
-
-        const filtered = products.filter((product) =>
-          product.name.toLowerCase().includes(search),
-        );
-
-        displayProducts(filtered);
-      }
-
-      // Open cart
-
-      function openCart() {
-        document.getElementById("cartModal").classList.remove("hidden");
-
-        updateCart();
-      }
-
-      // Close cart
-
-      function closeCart() {
-        document.getElementById("cartModal").classList.add("hidden");
-      }
-
-      // Checkout
-
-      function checkout() {
-        if (cart.length === 0) {
-          alert("Your cart is empty!");
-
-          return;
-        }
-
-        alert("Checkout system will be connected here.");
-      }
-
-      // Contact form
-
-      function contactForm(event) {
-        event.preventDefault();
-
-        alert("Thank you! Your message has been sent.");
-
-        event.target.reset();
-      }
-
-      // Mobile menu
-
-      function toggleMenu() {
-        document.getElementById("mobileMenu").classList.toggle("hidden");
-      }
-
-      // Initial display
-
-      displayProducts(products);
-    </script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
