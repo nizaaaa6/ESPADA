@@ -39,8 +39,19 @@ function updateCart() {
 
   const cartTotal = document.getElementById("cartTotal");
 
+  const checkoutBtn = document.getElementById("checkoutBtn");
+
   let count = 0;
   let total = 0;
+
+  if (cart.length === 0) {
+    cartItems.innerHTML = `<p class="text-gray-500 text-center py-6">Your cart is empty.</p>`;
+    cartCount.style.display = "none";
+    cartTotal.textContent = "₹0";
+    if (checkoutBtn) checkoutBtn.disabled = true;
+    saveCart();
+    return;
+  }
 
   cartItems.innerHTML = "";
 
@@ -100,8 +111,9 @@ function updateCart() {
   });
 
   cartCount.textContent = count;
-
+  cartCount.style.display = "flex";
   cartTotal.textContent = "₹" + total.toLocaleString();
+  if (checkoutBtn) checkoutBtn.disabled = false;
 
   saveCart();
 }

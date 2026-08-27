@@ -3,6 +3,11 @@ function displayProducts(list) {
 
   productList.innerHTML = "";
 
+  if (list.length === 0) {
+    productList.innerHTML = `<p class="text-gray-500 text-center col-span-full py-10">No desk mats found.</p>`;
+    return;
+  }
+
   list.forEach((product) => {
     productList.innerHTML += `
 
@@ -12,6 +17,7 @@ function displayProducts(list) {
               <img
                   src="${product.image}"
                   alt="${product.name}"
+                  loading="lazy"
                   class="w-full h-60 object-cover">
 
               <div class="p-5">
