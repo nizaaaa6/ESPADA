@@ -124,11 +124,3 @@ function checkout() {
 
   alert("Checkout system will be connected here.");
 }
-
-function contactForm(event) {
-  event.preventDefault();
-
-  alert("Thank you! Your message has been sent.");
-
-  event.target.reset();
-}
