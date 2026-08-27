@@ -137,5 +137,22 @@ function checkout() {
     return;
   }
 
-  showToast("Checkout isn't connected yet.");
+  closeCart();
+  document.getElementById("checkoutModal").classList.remove("hidden");
+}
+
+function closeCheckout() {
+  document.getElementById("checkoutModal").classList.add("hidden");
+}
+
+function submitOrder(event) {
+  event.preventDefault();
+
+  closeCheckout();
+  closeCart();
+  cart = [];
+  updateCart();
+  event.target.reset();
+
+  showToast("Order placed! We'll contact you to confirm.");
 }
