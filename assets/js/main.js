@@ -4,4 +4,5 @@ function toggleMenu() {
 
 window.addEventListener("DOMContentLoaded", () => {
   displayProducts(products);
+  updateCart();
 });

@@ -1,4 +1,17 @@
-let cart = [];
+function loadCart() {
+  try {
+    const raw = localStorage.getItem("espada_cart");
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveCart() {
+  localStorage.setItem("espada_cart", JSON.stringify(cart));
+}
+
+let cart = loadCart();
 
 function addToCart(id) {
   const product = products.find((item) => item.id === id);
@@ -89,6 +102,8 @@ function updateCart() {
   cartCount.textContent = count;
 
   cartTotal.textContent = "₹" + total.toLocaleString();
+
+  saveCart();
 }
 
 function changeQuantity(id, amount) {
