@@ -29,7 +29,7 @@ function addToCart(id) {
 
   updateCart();
 
-  alert(product.name + " added to cart!");
+  showToast(product.name + " added to cart");
 }
 
 function updateCart() {
@@ -132,10 +132,10 @@ function closeCart() {
 
 function checkout() {
   if (cart.length === 0) {
-    alert("Your cart is empty!");
+    showToast("Your cart is empty!");
 
     return;
   }
 
-  alert("Checkout system will be connected here.");
+  showToast("Checkout isn't connected yet.");
 }
