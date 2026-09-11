@@ -1,19 +1,17 @@
+@import "tailwindcss";
+
 html {
   scroll-behavior: smooth;
 }
-
 section[id] {
   scroll-margin-top: 5rem;
 }
-
 .product-card {
   transition: 0.3s;
 }
-
 .product-card:hover {
   transform: translateY(-6px);
 }
-
 .grain {
   position: fixed;
   inset: 0;
@@ -24,23 +22,20 @@ section[id] {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-size: 200px 200px;
 }
-
 .text-gradient {
   background: linear-gradient(120deg, #c084fc, #7c3aed, #a855f7);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-
 .toast {
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
-
 .toast--show {
   opacity: 1;
   transform: translateY(0);
 }
-
-
